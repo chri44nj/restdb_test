@@ -1,7 +1,7 @@
-fetch("https://testdatabase-5148.restdb.io/rest/film", {
+fetch("https://web2film-9d1b.restdb.io/rest/movies", {
   method: "get",
   headers: {
-    "x-apikey": "63e9f369478852088da68102",
+    "x-apikey": "63ea0303478852088da68144",
   },
 })
   .then((e) => e.json())
