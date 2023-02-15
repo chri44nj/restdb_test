@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 body {
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
@@ -18,4 +24,94 @@ body {
 .title {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.simpleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-image: url(img/wallpaper.png);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.simpleGrid_container {
+  padding-left: 12%;
+}
+
+.welcome {
+  font-size: 5rem;
+  font-family: "Lato";
+}
+
+.breakline {
+  border-bottom: 3px solid #3dd67c;
+  margin-bottom: 1.5rem;
+}
+
+.aboutUs {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: black;
+  color: white;
+  padding-block: 4rem;
+}
+
+.aboutUS_gridPosition {
+  grid-column-start: 2;
+}
+
+.movieSuggestion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.movieSuggestionPoster {
+  background-image: url(img/exorcist.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  right: 20%;
+}
+
+.movieSuggestionGrid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.movieSuggestionTitle {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.streamButton {
+  height: 10vh;
+  width: 15vw;
+  background-color: #3dd67c;
+  border: 0px solid #3dd67c;
+  border-radius: 50px;
+}
+
+.alignText {
+  text-align: center;
+}
+
+.buttonFlex {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.whatToWatch {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.whatToWatchText {
+  margin-inline: 15%;
 }
