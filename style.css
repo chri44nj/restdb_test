@@ -259,20 +259,15 @@ body {
   margin: 0;
   background-color: black;
 }
-.headerGrid2 {
-  position: relative;
-  margin-top: 2.8%;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  background-color: white;
-  padding-block: 1rem;
-}
 
-.headerGrid2 div {
+.headerGrid div {
   display: flex;
 }
-
+.rowGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 5rem;
+}
 .breadcrumb {
   display: flex;
   justify-content: flex-start;
@@ -296,7 +291,7 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
-.headerGrid3 {
+.headerGrid2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -308,7 +303,7 @@ h2.title {
   font-family: "Lato";
   color: white;
 }
-.headerGrid3 .rating {
+.headerGrid2 .rating {
   display: flex;
   justify-content: flex-end;
   padding-right: 1rem;
