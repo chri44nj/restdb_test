@@ -7,35 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 
 <body>
 
-    <header></header>
+    <header>
+        <div class="headerGrid">
+            <div class="logo">Logo</div>
+            <div class="navigationItems">
+                <a href="index.html#categories">Categories</a>
+                <a href="">Random Choice</a>
+                <a href=""> Most Popular</a>
+                <a href="">Bucket List</a>
+            </div>
+            <div class="search">Search
+            </div>
+        </div>
+    </header>
 
     <main>
-        <template id="movieTemplate">
-            <div>
-                <p class="title"></p>
-                <p class="description"></p>
-                <p class="genre"></p>
-                <p class="year"></p>
-                <p class="length"></p>
-                <p class="rating"></p>
-                <p class="oscarNominated"></p>
-                <p class="oscarWinner"></p>
-                <img class="poster" src="" alt="">
-                <p class="director"></p>
-                <p class="budget"></p>
-                <p class="ageRating"></p>
-                <p class="streaming"></p>
-            </div>
-        </template>
-
         <section class="simpleGrid">
             <div class="simpleGrid_container">
-                <h1 class="welcome">Welcome to <br> Can't Decide</h1>
+                <h1 class="welcomeHeading">Welcome to <br> Can't Decide</h1>
                 <div class="breakline"></div>
                 <p>HEJ Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique est odit exercitationem deserunt sunt. Natus, quis tempora omnis voluptatum nobis facilis inventore, soluta
                     voluptate et accusamus vel impedit ratione odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim error expedita asperiores ipsum eius voluptas culpa harum quibusdam
@@ -46,7 +40,7 @@
 
         <section class="aboutUs">
             <div class="aboutUS_gridPosition">
-                <h2 class="alignText">About us</h2>
+                <h2 class="aboutUsHeading">About us</h2>
                 <div class="breakline"></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam neque quae placeat provident nemo molestias impedit! Minus fugiat vel provident unde nobis eum adipisci qui ducimus,
                     consequuntur eligendi, quidem voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ab a sed possimus eius, perspiciatis, ipsum blanditiis officia aliquid,
@@ -60,26 +54,111 @@
             <div class="movieSuggestionGrid">
                 <p class="alignText movieSuggestionTitle">The Exorcist</p>
                 <div>
-                    <h3 class="whatToWatch alignText">What to watch tonight</h3>
+                    <h3 class="whatToWatchHeading alignText">What to watch tonight</h3>
                     <p class="whatToWatchText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, veniam. Delectus maxime earum quia aliquam esse, consequatur illo dolor magni nihil.
                         Voluptatum, voluptates
                         eveniet ipsa ratione nisi repellat fugit impedit!</p>
                 </div>
-                <div class="buttonFlex"><button class="streamButton">Netflix</button></div>
+                <div class="buttonFlex"><a class="streamButton" target="_blank" href="https://www.netflix.com/browse">Netflix</a></div>
 
 
             </div>
         </section>
 
-        <h1>Hej venner!</h1>
-        <p>Lad os lave noget fucking filmdatabase! Der er en usynlig template forneden, og der er lavet basic js til den.</p>
-        <p>Før den virker skal vi lige kende syntaksen for, hvordan man "getter"
-            specifik
-            data (som alle film fra en bestemt genre etc) fra vores database.</p>
+        <section class="categories" id="categories">
+            <h4 class="categoriesHeading alignText">Categories</h4>
+            <div class="categoriesMargin">
+                <div class="breakline"></div>
+                <div class="categoriesGrid">
+                    <a href="">
+                        <div class="categoryImg"><img src="img/categoryPlaceholder.jpg" alt="">
+                            <p class="genreName">Horror</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="categoryImg"><img src="img/categoryPlaceholder.jpg" alt="">
+                            <p class="genreName">Horror</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="categoryImg"><img src="img/categoryPlaceholder.jpg" alt="">
+                            <p class="genreName">Horror</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="categoryImg"><img src="img/categoryPlaceholder.jpg" alt="">
+                            <p class="genreName">Horror</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="categoryImg"><img src="img/categoryPlaceholder.jpg" alt="">
+                            <p class="genreName">Horror</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="categoryImg"><img src="img/categoryPlaceholder.jpg" alt="">
+                            <p class="genreName">Horror</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="categoryImg"><img src="img/categoryPlaceholder.jpg" alt="">
+                            <p class="genreName">Horror</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="categoryImg"><img src="img/categoryPlaceholder.jpg" alt="">
+                            <p class="genreName">Horror</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="categoryImg"><img src="img/categoryPlaceholder.jpg" alt="">
+                            <p class="genreName">Horror</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
+        <div class="breakline2"></div>
     </main>
 
-    <footer></footer>
+    <footer class="footerGrid">
+        <div>
+            <h5>Footer</h5>
+            <p>Footer</p>
+            <p>Footer</p>
+            <p>Footer</p>
+            <p>Footer</p>
+        </div>
+        <div>
+            <h5>Footer</h5>
+            <p>Footer</p>
+            <p>Footer</p>
+            <p>Footer</p>
+            <p>Footer</p>
+        </div>
+        <div>
+            <h5>Footer</h5>
+            <p>Footer</p>
+            <p>Footer</p>
+            <p>Footer</p>
+            <p>Footer</p>
+        </div>
+        <div>
+            <h5>Footer</h5>
+            <p>Footer</p>
+            <p>Footer</p>
+            <p>Footer</p>
+            <p>Footer</p>
+        </div>
+        <div>
+            <h5>Footer</h5>
+            <p>Footer</p>
+            <p>Footer</p>
+            <p>Footer</p>
+            <p>Footer</p>
+        </div>
+    </footer>
 
     <script src="index.js"></script>
 </body>
