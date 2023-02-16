@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.headerGrid {
+  position: absolute;
+  top: 5%;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  background-color: white;
+  padding-block: 1rem;
+}
+
+/* HEADER */
+.headerGrid div {
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+.logo {
+  justify-content: flex-start;
+  padding-left: 5.5rem;
+}
+
+.navigationItems {
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.navigationItems a {
+  text-decoration: none;
+  color: black;
+}
+
+.search {
+  justify-content: flex-end;
+  padding-right: 5.5rem;
+}
+
+/* BRØDKRUMMESTI */
+ul.breadcrum {
+  padding: 10px 16px;
+  list-style: none;
+  margin-left: 50px;
+}
+ul.breadcrum li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrum li + li:before {
+  padding: 8px;
+  color: #b8b8b8;
+  content: "/\00a0";
+}
+ul.breadcrum li a {
+  color: #b8b8b8;
+  text-decoration: none;
+}
+ul.breadcrum li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* CATEGORY*/
+.categories {
+  background-color: black;
+  color: white;
+}
+
+.categoriesHeading {
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.categoriesMargin {
+  margin-inline: 12%;
+}
+
+.breakline {
+  border-bottom: 4px solid #3dd67c;
+  margin-bottom: 3rem;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 40px;
+  padding-top: 0.5rem;
+  padding-bottom: 5rem;
+}
+
+.categoriesGrid a {
+  color: white;
+  text-decoration: none;
+}
+
+.categoryImg {
+  align-items: center;
+  justify-content: center;
+}
+
+.genreName {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Lato";
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.read {
+  color: #3dd67c;
+}
+
+.arrow {
+  border: solid #3dd67c;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
