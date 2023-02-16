@@ -224,9 +224,11 @@ body {
 .footerGrid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  margin-inline: 12%;
+  margin: 0 12% 0 12% 0;
   padding-bottom: 3rem;
   text-align: center;
+  background-color: white;
+  width: 100vw;
 }
 
 .footerGrid h5 {
@@ -250,4 +252,143 @@ body {
 .breakline2 {
   border-bottom: 6px solid #3dd67c;
   margin-bottom: 5rem;
+}
+/****** movie.html ******/
+
+.movieBackground {
+  margin: 0;
+  background-color: black;
+}
+.headerGrid2 {
+  position: relative;
+  margin-top: 2.8%;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  background-color: white;
+  padding-block: 1rem;
+}
+
+.headerGrid2 div {
+  display: flex;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 60px 16px 0px 16px;
+  list-style: none;
+}
+.breadcrumb li + li:before {
+  padding: 8px;
+  color: grey;
+  content: "|\00a0";
+}
+
+.breadcrumb a:link,
+.breadcrumb a:visited {
+  text-decoration: none;
+  color: grey;
+}
+.movieDescription {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h2.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 10%;
+  font-family: "Lato";
+  color: white;
+}
+
+hr {
+  border-bottom: 3px solid #3dd67c;
+  width: 30rem;
+  margin: auto;
+}
+
+.movieDescription {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 4%;
+}
+.movieInfo {
+  background-color: white;
+  padding-left: 10%;
+  border-left: 5px solid #3dd67c;
+}
+.movieInfo {
+  padding-top: 15%;
+}
+.movieDescription img {
+  border-right: 5px solid #3dd67c;
+}
+.movieDescription p {
+  max-width: 65ch;
+  padding-bottom: 2rem;
+}
+
+.streamingButtons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 5%;
+  gap: 1rem;
+}
+
+.movieDescription .streaming2 {
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #3dd67c;
+  max-width: 10rem;
+  border-radius: 30px;
+  text-align: center;
+}
+.movieDescription .streaming {
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #3dd67c;
+  max-width: 10rem;
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.streamingButtons a:link,
+.streamingButtons a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.suggestionsHeading {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  font-family: "Lato";
+}
+
+.suggestionsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 8rem;
+}
+.suggestionsGrid a:link,
+.suggestionsGrid a:visited {
+  text-decoration: none;
+  color: white;
+}
+.suggestionsGrid .title {
+  padding-top: 20px;
+  font-size: 1.5rem;
+}
+.suggestionsGrid .readmore {
+  color: #3dd67c;
+  text-decoration: underline;
+}
+footer {
+  margin: 0;
 }
