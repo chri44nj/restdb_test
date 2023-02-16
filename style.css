@@ -296,6 +296,11 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.headerGrid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 h2.title {
   text-align: center;
   font-size: 3rem;
@@ -303,7 +308,18 @@ h2.title {
   font-family: "Lato";
   color: white;
 }
-
+.headerGrid3 .rating {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  align-items: end;
+  font-size: 1.3rem;
+  color: white;
+}
+.rating span {
+  color: #3dd67c;
+  padding-left: 15px;
+}
 hr {
   border-bottom: 3px solid #3dd67c;
   width: 30rem;
