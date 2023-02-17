@@ -143,3 +143,22 @@ ul.breadcrum li a:hover {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-inline: 12%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  background-color: white;
+  width: 100vw;
+}
+
+.footerGrid h5 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
