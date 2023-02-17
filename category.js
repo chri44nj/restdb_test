@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const movieGenre = urlParams.get("genre");
 
-fetch("https://web2film-9d1b.restdb.io/rest/movies?q={"genre":" + moviegenre + "}", {
+fetch(`https://web2film-9d1b.restdb.io/rest/movies?q={"genre":"${movieGenre}"}`, {
   method: "get",
   headers: {
     "x-apikey": "63ea0303478852088da68144",
