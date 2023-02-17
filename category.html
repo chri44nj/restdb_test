@@ -38,16 +38,18 @@
       </ul>
 
       <div class="categoriesGrid">
-        <div class="categoryImg">
-          <a href="">
-            <img src="img/categoryPlaceholder.jpg" alt="" />
-            <p class="genreName">Safe Haven</p>
-          </a>
-          <div>
-            <a class="read" href="movie.html">Read more</a>
-            <i class="arrow right"></i>
+        <template id="categoryTemplate">
+          <div class="categoryImg">
+            <a href="">
+              <img src="img/categoryPlaceholder.jpg" alt="" />
+              <p class="genreName">Safe Haven</p>
+            </a>
+            <div>
+              <a class="read" href="movie.html">Read more</a>
+              <i class="arrow right"></i>
+            </div>
           </div>
-        </div>
+        </template>
 
         <div class="categoryImg">
           <a href="">
@@ -137,7 +139,9 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
+
   <footer class="footerGrid">
     <div>
       <h5>Footer</h5>
