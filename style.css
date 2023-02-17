@@ -296,7 +296,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-h2.title {
+h2.title2 {
   text-align: center;
   font-size: 3rem;
   margin-top: 10%;
