@@ -1,55 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.headerGrid {
-  position: absolute;
-  top: 5%;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  background-color: white;
-  padding-block: 1rem;
-  font-family: "Montserrat", sans-serif;
-}
-
-/* HEADER */
-.headerGrid div {
-  display: flex;
-}
-
-.relative {
-  position: relative;
-}
-
-.logo {
-  justify-content: flex-start;
-  padding-left: 5.5rem;
-}
-
-.navigationItems {
-  justify-content: center;
-  gap: 2.5rem;
-}
-
-.navigationItems a {
-  text-decoration: none;
-  color: black;
-}
-
-.search {
-  justify-content: flex-end;
-  padding-right: 5.5rem;
-}
-
 /* BRØDKRUMMESTI */
 ul.breadcrum {
   padding: 10px 16px;
@@ -74,52 +22,16 @@ ul.breadcrum li a:hover {
   text-decoration: underline;
 }
 
-/* CATEGORY*/
-.categories {
-  background-color: black;
-  color: white;
+.topPadding {
+  padding-top: 3rem;
 }
 
-.categoriesHeading {
-  padding-top: 10rem;
-  padding-bottom: 1rem;
-  font-size: 3rem;
-  font-family: "Lato";
-  text-align: center;
-}
-
-.categoriesMargin {
-  margin-inline: 12%;
-}
-
-.breakline {
-  border-bottom: 4px solid #3dd67c;
-  margin-bottom: 3rem;
-  margin-left: 300px;
-  margin-right: 300px;
-}
-
-.categoriesGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 40px;
-  padding-top: 0.5rem;
-  padding-bottom: 5rem;
-}
-
-/*
-.categoriesGrid a {
-  text-decoration: none;
-}
-*/
-
-.categoryImg {
+.categoriesImg {
   align-items: center;
   justify-content: center;
 }
 
-.genreName {
+.genreNameCategories {
   font-size: 2rem;
   font-weight: bold;
   font-family: "Lato";
@@ -142,23 +54,4 @@ ul.breadcrum li a:hover {
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-}
-
-.footerGrid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin-inline: 12%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  text-align: center;
-  background-color: white;
-  width: 100vw;
-}
-
-.footerGrid h5 {
-  font-size: 1.5rem;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
 }
