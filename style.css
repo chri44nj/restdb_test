@@ -36,6 +36,10 @@ p {
   display: flex;
 }
 
+.relative {
+  position: relative;
+}
+
 .logo {
   justify-content: flex-start;
   padding-left: 5.5rem;
