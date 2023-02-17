@@ -1,0 +1,29 @@
+.headerGrid {
+  position: absolute;
+  top: 5%;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  background-color: white;
+  padding-block: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.headerGrid div {
+  display: flex;
+}
+
+.logo {
+  justify-content: flex-start;
+  padding-left: 5.5rem;
+}
+
+.navigationItems {
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.navigationItems a {
+  text-decoration: none;
+  color: black;
+}
