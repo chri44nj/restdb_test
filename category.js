@@ -22,5 +22,4 @@ function showCategory(category) {
   copy.querySelector(".genre").textContent = movie.genre;
   copy.querySelector(".year").textContent = movie.year;
   copy.querySelector(".length").textContent = movie.length + "m";
-  copy.querySelector(".rating").textContent = "IMDB Rating: " + movie.rating;
-
+}
