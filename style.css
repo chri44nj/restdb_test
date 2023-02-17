@@ -249,7 +249,7 @@ p {
 .footerGrid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  margin: 0 12% 0 12% 0;
+  margin-inline: 12%;
   padding-bottom: 3rem;
   text-align: center;
   background-color: white;
