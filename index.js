@@ -25,21 +25,27 @@ function showMovie(movie) {
   copy.querySelector(".rating").textContent = "IMDB Rating: " + movie.rating;
 
   if (movie.oscarNominated) {
-    copy.querySelector(".oscarNominated").textContent = movie.oscarNominated + " Oscar nominations";
+    copy.querySelector(".oscarNominated").textContent =
+      movie.oscarNominated + " Oscar nominations";
   } else {
     copy.querySelector(".oscarNominated").classList.add("hide");
     copy.querySelector(".oscarWinner").classList.add("hide");
   }
 
   if (movie.oscarWinner) {
-    copy.querySelector(".oscarWinner").textContent = movie.oscarWinner + " Oscar wins";
+    copy.querySelector(".oscarWinner").textContent =
+      movie.oscarWinner + " Oscar wins";
   } else {
     copy.querySelector(".oscarWinner").classList.add("hide");
   }
 
-  copy.querySelector(".poster").src = `https://kea-alt-del.dk/t7/images/webp/640/${movie.id}.webp`;
-  copy.querySelector(".director").textContent = "Directed by: " + movie.director;
+  copy.querySelector(
+    ".poster"
+  ).src = `https://kea-alt-del.dk/t7/images/webp/640/${movie.id}.webp`;
+  copy.querySelector(".director").textContent =
+    "Directed by: " + movie.director;
   copy.querySelector(".budget").textContent = "Budget: $" + movie.budget;
   copy.querySelector(".ageRating").textContent = "PG: " + movie.ageRating;
-  copy.querySelector(".streaming").textContent = "Streaming on: " + movie.streaming;
+  copy.querySelector(".streaming").textContent =
+    "Streaming on: " + movie.streaming;
 }

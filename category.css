@@ -18,6 +18,7 @@ img {
   grid-template-columns: 1fr 3fr 1fr;
   background-color: white;
   padding-block: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* HEADER */
@@ -107,10 +108,11 @@ ul.breadcrum li a:hover {
   padding-bottom: 5rem;
 }
 
+/*
 .categoriesGrid a {
-  color: white;
   text-decoration: none;
 }
+*/
 
 .categoryImg {
   align-items: center;
@@ -123,6 +125,7 @@ ul.breadcrum li a:hover {
   font-family: "Lato";
   margin-top: 10px;
   margin-bottom: 10px;
+  color: white;
 }
 
 .read {
@@ -139,4 +142,23 @@ ul.breadcrum li a:hover {
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-inline: 12%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  background-color: white;
+  width: 100vw;
+}
+
+.footerGrid h5 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
 }
