@@ -15,8 +15,8 @@ fetch(
 
 function showCategories(categories) {
   console.log(categories);
-  document.querySelector(".categoriesHeading").textContent = movieGenre;
   document.querySelector(".genrebreadcrumb").textContent = movieGenre;
+  document.querySelector(".categoriesHeading").textContent = movieGenre;
   categories.forEach(showCategory);
 }
 function showCategory(category) {
