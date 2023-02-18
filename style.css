@@ -394,7 +394,22 @@ hr {
   text-align: center;
   margin-bottom: 2rem;
 }
-
+.movieDescription .streaming3 {
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #3dd67c;
+  max-width: 10rem;
+  border-radius: 30px;
+  text-align: center;
+}
+.movieDescription .streaming4 {
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #3dd67c;
+  max-width: 10rem;
+  border-radius: 30px;
+  text-align: center;
+}
 .streamingButtons a:link,
 .streamingButtons a:visited {
   text-decoration: none;
