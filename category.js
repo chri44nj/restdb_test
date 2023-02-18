@@ -1,17 +1,22 @@
 const urlParams = new URLSearchParams(window.location.search);
 const movieGenre = urlParams.get("genre");
 
-fetch("https://web2film-9d1b.restdb.io/rest/movies", {
-  method: "get",
-  headers: {
-    "x-apikey": "63ea0303478852088da68144",
-  },
-})
+fetch(
+  `https://web2film-9d1b.restdb.io/rest/movies?q={"genre": "${movieGenre}"}`,
+  {
+    method: "get",
+    headers: {
+      "x-apikey": "63ea0303478852088da68144",
+    },
+  }
+)
   .then((e) => e.json())
   .then(showCategories);
 
 function showCategories(categories) {
   console.log(categories);
+  document.querySelector(".categoriesHeading").textContent = movieGenre;
+  document.querySelector(".genrebreadcrumb").textContent = movieGenre;
   categories.forEach(showCategory);
 }
 function showCategory(category) {
