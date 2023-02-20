@@ -487,7 +487,6 @@ hr {
 .suggestionsHeading {
   padding-top: 5rem;
   padding-bottom: 1rem;
-  font-size: 3rem;
   font-family: "Lato";
 }
 
@@ -521,8 +520,16 @@ hr {
 
 .wantedFlex2 {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 3rem;
+}
+
+.green {
+  color: #3dd67c;
+  font-size: 4rem;
 }
 
 .wantedLogo {
-  width: 10%;
+  width: 5%;
 }
