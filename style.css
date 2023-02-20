@@ -204,7 +204,6 @@ p {
   padding-bottom: 1rem;
   font-size: 3rem;
   font-family: "Lato";
-  margin-top: 20px;
 }
 
 .categoriesMargin {
@@ -233,12 +232,12 @@ p {
 
 .categoryImg:hover img {
   opacity: 50%;
-  -webkit-filter: sepia(100%) saturate(200%) brightness(100%) contrast(2);
-  filter: sepia(100%) saturate(200%) brightness(100%) contrast(2);
+  -webkit-filter: grayscale(100%) sepia(100%) hue-rotate(45deg);
+  filter: grayscale(100%) sepia(100%) hue-rotate(45deg);
 }
 
 .categoryImg:hover p {
-  color: #3dd67c;
+  color: white;
 }
 
 .genreName {
