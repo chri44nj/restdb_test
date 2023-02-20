@@ -7,32 +7,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
 </head>
 
 <body>
 
     <header>
         <div class="headerGrid">
-            <a class="logo" href="index.html">Logo</a>
+            <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo" /></a>
             <div class="navigationItems">
                 <a href="index.html#categories">Categories</a>
-                <a href="">Random Choice</a>
-                <a href=""> Most Popular</a>
+                <a href="category.html">Random Genre</a>
+                <a href="movie.html"> Most Popular Movie</a>
                 <a href="">Bucket List</a>
             </div>
-            <div class="search">Search
-            </div>
+            <div class="search">Search</div>
         </div>
     </header>
 
     <main>
-        <form>
-            <div class="formField">
-                <label for=""><input placeholder="Movie title"></label>
+
+        <div class="grid_1-1">
+            <div>
+                <img src="img/darkKnight.webp" alt="darkKnight">
             </div>
-        </form>
+            <div>
+                <h1>Contact</h1>
+                <div class="breakline"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis facilis, fuga vero tempora aliquam,
+                    aut
+                    tempore enim odio, aspernatur esse modi. Quis, animi necessitatibus itaque commodi expedita quos
+                    fugit.
+                    Quibusdam.</p>
+                <form class="form">
+                    <div>
+                        <label for="MovieTitle">Movie Title:</label>
+                        <input placeholder="Titanic" id="MovieTitle" type="text">
+                    </div> <br>
+                    <div>
+                        <label for="Genre">Genre:</label>
+                        <input placeholder="Drama" id="Genre" type="text">
+                    </div> <br>
+                    <div>
+                        <label for="year">Year:</label>
+                        <input placeholder="2001" id="year" type="text">
+                    </div> <br>
+                    <div>
+                        <label for="length">Length:</label>
+                        <input placeholder="250min" id="length" type="text">
+                    </div> <br>
+                    <div>
+                        <label for="director">Director:</label>
+                        <input placeholder="Steven Spielberg" id="director" type="text">
+                    </div> <br>
+                    <div>
+                        <label for="budget">Budget:</label>
+                        <input placeholder="$28000000" id="budget" type="number">
+                    </div> <br>
+                    <div>
+                        <label for="oscarNominated">Oscarnomination:</label>
+                        <input type="checkbox" name="checkbox" id="oscarNominated">
+                    </div> <br>
+                    <div>
+                        <label for="oscarWinner">Oscar Winner:</label>
+                        <input type="checkbox" name="checkbox" id="oscarWinner">
+                    </div> <br>
+                    <div>
+                        <label for="streaming">Streaming Services:</label>
+                        <input placeholder="Netflix" type="text" id="streaming">
+                    </div> <br>
+
+                    <button>Submit</button>
+
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="footerGrid">
