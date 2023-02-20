@@ -7,39 +7,50 @@ fetch("https://web2film-9d1b.restdb.io/rest/movies", {
   .then((e) => e.json())
   .then(showMovies);
 
-function showMovies(movies) {
-  console.log(movies);
-  movies.forEach(showMovie);
+function generateRandomNumber() {
+  return Math.floor(Math.random() * 80);
 }
 
-// Vores funktion der kloner hver film og erstatter værdier i templaten med værdier fra filmene (ukomplet, indtil vi finder ud af hvordan man linker til vores database)
-function showMovie(movie) {
-  console.log(movie);
-  const template = document.querySelector("#movieTemplate").content;
-  const copy = template.cloneNode(true);
-  copy.querySelector(".title").textContent = movie.title;
-  copy.querySelector(".description").textContent = movie.description;
-  copy.querySelector(".genre").textContent = movie.genre;
-  copy.querySelector(".year").textContent = movie.year;
-  copy.querySelector(".length").textContent = movie.length + "m";
-  copy.querySelector(".rating").textContent = "IMDB Rating: " + movie.rating;
-
-  if (movie.oscarNominated) {
-    copy.querySelector(".oscarNominated").textContent = movie.oscarNominated + " Oscar nominations";
+function showMovies(movies) {
+  console.log(movies);
+  let rndNum = generateRandomNumber();
+  document.querySelector(".movieSuggestionTitle").textContent =
+    movies[rndNum].title;
+  document.querySelector(
+    ".movieSuggestionPoster"
+  ).src = `img/${movies[rndNum].poster}`;
+  if (movies[rndNum].streaming.includes("Netflix")) {
+    document.querySelector(".streaming").href = `https://www.netflix.com/dk/`;
+    document.querySelector(".streaming").textContent = `Go to Netflix`;
   } else {
-    copy.querySelector(".oscarNominated").classList.add("hide");
-    copy.querySelector(".oscarWinner").classList.add("hide");
+    document.querySelector(".streaming").classList.add("hide");
   }
 
-  if (movie.oscarWinner) {
-    copy.querySelector(".oscarWinner").textContent = movie.oscarWinner + " Oscar wins";
+  if (movies[rndNum].streaming.includes("HBO Max")) {
+    document.querySelector(".streaming2").href = `https://www.hbomax.com/dk/da`;
+    document.querySelector(".streaming2").textContent = `Go to HBO max`;
   } else {
-    copy.querySelector(".oscarWinner").classList.add("hide");
+    document.querySelector(".streaming2").classList.add("hide");
   }
 
-  copy.querySelector(".poster").src = `https://kea-alt-del.dk/t7/images/webp/640/${movie.id}.webp`;
-  copy.querySelector(".director").textContent = "Directed by: " + movie.director;
-  copy.querySelector(".budget").textContent = "Budget: $" + movie.budget;
-  copy.querySelector(".ageRating").textContent = "PG: " + movie.ageRating;
-  copy.querySelector(".streaming").textContent = "Streaming on: " + movie.streaming;
+  if (movies[rndNum].streaming.includes("Disney+")) {
+    document.querySelector(
+      ".streaming3"
+    ).href = `https://www.disneyplus.com/da-dk/`;
+    document.querySelector(".streaming3").textContent = `Go to Disney+`;
+  } else {
+    document.querySelector(".streaming3").classList.add("hide");
+  }
+  if (movies[rndNum].streaming.includes("Viaplay")) {
+    document.querySelector(".streaming4").href = `https://viaplay.dk/dk-da/`;
+    document.querySelector(".streaming4").textContent = `Go to Viaplay`;
+  } else {
+    document.querySelector(".streaming4").classList.add("hide");
+  }
+  if (movies[rndNum].streaming.includes("Amazon Prime")) {
+    document.querySelector(".streaming5").href = `https://www.primevideo.com/`;
+    document.querySelector(".streaming5").textContent = `Go to Amazon Prime`;
+  } else {
+    document.querySelector(".streaming5").classList.add("hide");
+  }
 }

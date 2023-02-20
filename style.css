@@ -133,27 +133,21 @@ p {
 }
 
 .movieSuggestionPoster {
-  background-image: url(img/exorcist.jpg);
-  background-size: cover;
   height: 100vh;
   width: 100%;
   border-right: 10px solid #3dd67c;
 }
 
-.movieSuggestionGrid {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-}
-
 .movieSuggestionTitle {
   font-size: 5rem;
-  padding-bottom: 2rem;
+  line-height: 5rem;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 
 .whatToWatchHeading {
   font-size: 3rem;
+  padding-top: 5rem;
   font-weight: lighter;
   font-family: "Lato";
   margin-bottom: 20px;
@@ -162,7 +156,6 @@ p {
 .whatToWatchText {
   margin-inline: 15%;
 }
-
 .buttonFlex {
   display: flex;
   justify-content: center;
@@ -379,7 +372,7 @@ hr {
   gap: 1rem;
 }
 
-.movieDescription .streaming2 {
+.streaming2 {
   height: 3rem;
   line-height: 3rem;
   background-color: #3dd67c;
@@ -387,7 +380,7 @@ hr {
   border-radius: 30px;
   text-align: center;
 }
-.movieDescription .streaming {
+.streaming {
   height: 3rem;
   line-height: 3rem;
   background-color: #3dd67c;
@@ -396,7 +389,7 @@ hr {
   text-align: center;
   margin-bottom: 2rem;
 }
-.movieDescription .streaming3 {
+.streaming3 {
   height: 3rem;
   line-height: 3rem;
   background-color: #3dd67c;
@@ -404,7 +397,15 @@ hr {
   border-radius: 30px;
   text-align: center;
 }
-.movieDescription .streaming4 {
+.streaming4 {
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #3dd67c;
+  max-width: 10rem;
+  border-radius: 30px;
+  text-align: center;
+}
+.streaming5 {
   height: 3rem;
   line-height: 3rem;
   background-color: #3dd67c;
@@ -414,6 +415,27 @@ hr {
 }
 .streamingButtons a:link,
 .streamingButtons a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.streamingButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 5rem;
+}
+
+.streamingButton .streaming,
+.streamingButton .streaming2,
+.streamingButton .streaming3,
+.streamingButton .streaming4,
+.streamingButton .streaming5 {
+  padding: 0 1rem;
+}
+
+.streamingButton a:link,
+.streamingButton a:visited {
   text-decoration: none;
   color: white;
 }
