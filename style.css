@@ -512,3 +512,18 @@ hr {
   color: #3dd67c;
   text-decoration: underline;
 }
+
+.wantedFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wantedFlex2 {
+  display: flex;
+}
+
+.wantedLogo {
+  width: 10%;
+}
