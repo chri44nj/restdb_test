@@ -200,3 +200,18 @@ footer {
   padding-left: 5.5rem;
   width: 50%;
 }
+
+.streamButton {
+  border: 3px solid transparent;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.streamButton:hover {
+  background-color: white;
+  color: #3dd67c;
+  border: 3px solid #3dd67c;
+}
