@@ -81,6 +81,8 @@ p {
   justify-content: flex-end;
   padding-right: 5.5rem;
   align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 /****** MAIN ******/
