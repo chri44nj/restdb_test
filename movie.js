@@ -15,15 +15,13 @@ function showMovie(movie) {
   document.querySelector(".genre").textContent = movie.genre;
   document.querySelector(".title").textContent = movie.title;
   document.querySelector(".title2").textContent = movie.title;
-  document.querySelector(".rating").textContent = movie.rating;
+  document.querySelector(".rating").textContent = "IMDB rating:" + movie.rating;
   document.querySelector(".description").textContent = movie.description;
   document.querySelector(".genre2").textContent = `Genre: ${movie.genre}`;
   document.querySelector(".year").textContent = `Year: ${movie.year}`;
   document.querySelector(".length").textContent = `Length: ${movie.length}m.`;
   document.querySelector(".poster").src = `img/${movie.poster}`;
-  document.querySelector(
-    ".director"
-  ).textContent = `Director: ${movie.director}`;
+  document.querySelector(".director").textContent = `Director: ${movie.director}`;
   document.querySelector(".budget").textContent = `Budget: $${movie.budget}`;
   if (movie.oscarNominated) {
     document.querySelector(".oscarNominated").textContent = `Oscar nominated`;
@@ -51,9 +49,7 @@ function showMovie(movie) {
   }
 
   if (movie.streaming.includes("Disney+")) {
-    document.querySelector(
-      ".streaming3"
-    ).href = `https://www.disneyplus.com/da-dk/`;
+    document.querySelector(".streaming3").href = `https://www.disneyplus.com/da-dk/`;
     document.querySelector(".streaming3").textContent = `Go to Disney+`;
   } else {
     document.querySelector(".streaming3").classList.add("hide");
