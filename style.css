@@ -95,7 +95,7 @@ p {
   align-items: center;
   background-image: url(img/forside1_img.webp);
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -142,7 +142,7 @@ p {
 }
 
 .movieSuggestionPoster {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   border-right: 10px solid #3dd67c;
 }
@@ -204,7 +204,6 @@ p {
   padding-bottom: 1rem;
   font-size: 3rem;
   font-family: "Lato";
-  margin-top: 20px;
 }
 
 .categoriesMargin {
@@ -488,7 +487,6 @@ hr {
 .suggestionsHeading {
   padding-top: 5rem;
   padding-bottom: 1rem;
-  font-size: 3rem;
   font-family: "Lato";
 }
 
@@ -511,4 +509,27 @@ hr {
 .suggestionsGrid .readmore {
   color: #3dd67c;
   text-decoration: underline;
+}
+
+.wantedFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wantedFlex2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 3rem;
+}
+
+.green {
+  color: #3dd67c;
+  font-size: 4rem;
+}
+
+.wantedLogo {
+  width: 5%;
 }
