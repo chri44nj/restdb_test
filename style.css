@@ -96,7 +96,6 @@ p {
   width: 100%;
   color: white;
   font-family: "Montserrat", sans-serif;
-  overflow: hidden;
 }
 
 .indexImage {
@@ -194,6 +193,8 @@ p {
 }
 
 .categoriesMargin {
+  display: grid;
+  justify-content: center;
   margin-inline: 12%;
 }
 
@@ -520,5 +521,49 @@ hr {
 
   .headerGrid {
     display: none;
+  }
+
+  .simpleGrid {
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .indexImage {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .simpleGrid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 12%;
+  }
+
+  .welcomeHeading {
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    display: flex;
+  }
+
+  .categoriesMargin {
+    display: block;
+  }
+
+  .aboutUsHeading {
+    font-size: 2rem;
+  }
+
+  .hideWhenMobile {
+    display: none;
+  }
+
+  .genreName {
+    font-size: 2rem;
   }
 }
