@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <article>
+            <h2>hej</h2>
+        </article>
+        <p>igen</p>
+    </div>
+
+
+    <style>
+        article {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+        }
+
+        p {
+            background-color: royalblue;
+        }
+
+        div {
+            display: grid;
+            width: 200px;
+        }
+
+
+
+        div>* {
+            grid-column: 1;
+            grid-row: 1;
+
+        }
+    </style>
+</body>
+
+</html>
