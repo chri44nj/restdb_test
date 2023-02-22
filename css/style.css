@@ -677,6 +677,7 @@ hr {
     border-top: 10px solid #3dd67c;
     border-bottom: 10px solid #3dd67c;
     height: auto;
+    padding-bottom: 2rem;
   }
 
   .movieSuggestionPoster {
