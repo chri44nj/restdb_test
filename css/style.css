@@ -633,7 +633,7 @@ hr {
   .indexWelcome {
     color: white;
     font-size: 3rem;
-    grid-row: 10;
+    grid-row: 6;
     grid-column: 2 / 10;
     white-space: pre-wrap;
     text-align: center;
@@ -642,7 +642,7 @@ hr {
   .breakline {
     border-bottom: 3px solid #3dd67c;
     margin-bottom: 1.5rem;
-    grid-row: 11;
+    grid-row: 7;
     grid-column: 2 / 10;
   }
 
@@ -651,7 +651,7 @@ hr {
     color: white;
     line-height: 1.8;
     font-family: "Montserrat", sans-serif;
-    grid-row: 12;
+    grid-row: 8;
     grid-column: 2 / 10;
   }
 
