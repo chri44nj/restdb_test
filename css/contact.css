@@ -218,3 +218,28 @@ footer {
   color: #3dd67c;
   border: 3px solid #3dd67c;
 }
+
+.hideWhenWeb {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .questionMark {
+    display: flex;
+    padding-left: 25%;
+    color: black;
+  }
+
+  .burgerMenu {
+    padding-right: 25%;
+    display: flex;
+    color: black;
+  }
+
+  .headerGrid * {
+    text-decoration: none;
+  }
+  .hideWhenMobile {
+    display: none;
+  }
+}

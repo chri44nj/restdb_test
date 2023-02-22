@@ -17,14 +17,20 @@
 
     <header>
         <div class="headerGrid">
-            <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo" /></a>
-            <div class="navigationItems">
+            <div class="search">
+                <a class="headerLogo hideWhenMobile" href="index.html"><img src="img/logo.svg" alt="Logo" /></a>
+                <a class="headerLogo" href="index.html"><i class="fas fa-question questionMark hideWhenWeb"></i></a>
+            </div>
+            <div class="navigationItems hideWhenMobile">
                 <a href="index.html#categories">Categories</a>
                 <a href="category.html">Random Genre</a>
                 <a href="">Bucket List</a>
                 <a href="contact.html">Contact us</a>
             </div>
-            <i class="fas fa-search search"></i>
+            <div class="search">
+                <i class="fas fa-search hideWhenMobile"></i>
+                <i class="fa fa-bars burgerMenu hideWhenWeb"></i>
+            </div>
         </div>
     </header>
 
@@ -90,7 +96,7 @@
     <div class="breakline2"></div>
 
     <footer>
-        <div class="navigationItemsFooter footerFlex">
+        <div class="hideWhenMobile navigationItemsFooter footerFlex">
             <a href="index.html#categories">Categories</a>
             <a href="category.html">Random Genre</a>
             <a href="">Bucket List</a>

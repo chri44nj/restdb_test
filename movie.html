@@ -12,18 +12,32 @@
 </head>
 
 <body>
-  <header>
+  <div class="gridMaster">
+    <img class="heroImg" src="img/forside1_img.webp" alt="">
     <div class="headerGrid">
-      <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo" /></a>
-      <div class="navigationItems">
+      <div class="search">
+        <a class="headerLogo hideWhenMobile" href="index.html"><img src="img/logo.svg" alt="Logo" /></a>
+        <a class="headerLogo" href="index.html"><i class="fas fa-question questionMark hideWhenWeb"></i></a>
+      </div>
+      <div class="navigationItems hideWhenMobile">
         <a href="index.html#categories">Categories</a>
         <a href="category.html">Random Genre</a>
         <a href="">Bucket List</a>
         <a href="contact.html">Contact us</a>
       </div>
-      <i class="fas fa-search search"></i>
+      <div class="search">
+        <i class="fas fa-search hideWhenMobile"></i>
+        <i class="fa fa-bars burgerMenu hideWhenWeb"></i>
+      </div>
     </div>
-  </header>
+    <h1 class="indexWelcome">Your perfect match</h1>
+    <img class="indexLogo hideWhenMobile" src="img/logo1.svg" alt="">
+    <div class="breakline"></div>
+    <p class="pitch">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laboriosam illo adipisci animi beatae placeat ex maxime impedit blanditiis praesentium architecto pariatur, cum
+      id, velit quibusdam! Ipsa possimus aliquid voluptatum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. In est mollitia perspiciatis, quas veniam fugiat? Similique dolore voluptatibus
+      repellat, architecto natus tempora numquam exercitationem quibusdam eligendi ullam recusandae, ad inventore.</p>
+  </div>
+
   <main class="movieBackground">
     <section class="rowGrid">
       <ul class="breadcrumb">
@@ -38,26 +52,50 @@
           <h2 class="title2">The NoteBook</h2>
           <hr />
         </div>
-        <p class="rating"></p>
       </div>
     </section>
     <div class="movieDescription">
       <img class="poster" src="" alt="" />
       <div class="movieInfo">
-        <p class="description"></p>
-        <p class="genre2"></p>
-        <p class="year"></p>
-        <p class="length"></p>
-        <p class="director"></p>
-        <p class="budget"></p>
+        <div>
+          <h3>Genre</h3>
+          <p class="genre2"></p>
+        </div>
+        <div>
+          <h3>Movie Description</h3>
+          <p class="description"></p>
+        </div>
+        <div>
+          <h3>IMDB-Rating</h3>
+          <p class="rating"></p>
+        </div>
+        <div>
+          <h3>Year</h3>
+          <p class="year"></p>
+        </div>
+        <div>
+          <h3>Length</h3>
+          <p class="length"></p>
+        </div>
+        <div>
+          <h3>Director</h3>
+          <p class="director"></p>
+        </div>
+        <div>
+          <h3>Budget</h3>
+          <p class="budget"></p>
+        </div>
         <p class="oscarNominated"></p>
         <p class="oscarWinner"></p>
-        <div class="streamingButton">
-          <a class="streaming" target="_blank" href="https://viaplay.dk/dk-da/"></a>
-          <a class="streaming2" target="_blank" href="https://viaplay.dk/dk-da/"></a>
-          <a class="streaming3" target="_blank" href="https://viaplay.dk/dk-da/"></a>
-          <a class="streaming4" target="_blank" href="https://viaplay.dk/dk-da/"></a>
-          <a class="streaming5" target="_blank" href="https://viaplay.dk/dk-da/"></a>
+        <div class="streamingBox">
+          <h3 class="streamText">Streaming platforms</h3>
+          <div class="streamingButton">
+            <a class="streaming" target="_blank" href="https://viaplay.dk/dk-da/"></a>
+            <a class="streaming2" target="_blank" href="https://viaplay.dk/dk-da/"></a>
+            <a class="streaming3" target="_blank" href="https://viaplay.dk/dk-da/"></a>
+            <a class="streaming4" target="_blank" href="https://viaplay.dk/dk-da/"></a>
+            <a class="streaming5" target="_blank" href="https://viaplay.dk/dk-da/"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -65,7 +103,8 @@
       <div class="suggestionsHeading alignText wantedFlex">
         <div class="wantedFlex2">
           <h4>Not what you wanted<span class="green">?</span></h4>
-          <h4>Here are some other suggestions..</h4>
+          <h4 class="suggestions
+          ">Here are some other suggestions...</h4>
         </div>
         <div class="categoriesMargin">
           <div class="suggestionsGrid">
@@ -107,7 +146,7 @@
   </main>
 
   <footer>
-    <div class="navigationItemsFooter footerFlex">
+    <div class="hideWhenMobile navigationItemsFooter footerFlex">
       <a href="index.html#categories">Categories</a>
       <a href="category.html">Random Genre</a>
       <a href="">Bucket List</a>

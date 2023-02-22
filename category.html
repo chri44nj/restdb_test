@@ -6,30 +6,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/category.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>Comedy</title>
 </head>
 
 <body>
-  <header>
+
+  <div class="gridMaster">
+    <img class="heroImg" src="img/forside1_img.webp" alt="">
     <div class="headerGrid">
-      <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo" /></a>
-      <div class="navigationItems">
+      <div class="search">
+        <a class="headerLogo hideWhenMobile" href="index.html"><img src="img/logo.svg" alt="Logo" /></a>
+        <a class="headerLogo" href="index.html"><i class="fas fa-question questionMark hideWhenWeb"></i></a>
+      </div>
+      <div class="navigationItems hideWhenMobile">
         <a href="index.html#categories">Categories</a>
         <a href="category.html">Random Genre</a>
         <a href="">Bucket List</a>
         <a href="contact.html">Contact us</a>
       </div>
-      <i class="fas fa-search search"></i>
+      <div class="search">
+        <i class="fas fa-search hideWhenMobile"></i>
+        <i class="fa fa-bars burgerMenu hideWhenWeb"></i>
+      </div>
     </div>
-  </header>
+    <h1 class="indexWelcome">Looking for some <br> <span class="welcomeGenre"></span></h1>
+    <img class="indexLogo hideWhenMobile" src="img/logo1.svg" alt="">
+    <div class="breakline"></div>
+    <p class="pitch">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laboriosam corporis officiis iste, temporibus tenetur autem praesentium. Tempora, at. In nihil nulla quod
+      distinctio laboriosam! Odit debitis sit deserunt vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste eaque temporibus facilis aliquid officia velit dolorem, corrupti
+      illo, officiis hic alias autem corporis deleniti perferendis quos omnis laboriosam ipsam!</p>
+  </div>
 
   <main>
     <section class="categories topPadding">
       <h4 class="categoriesHeading alignText">Comedy</h4>
       <div class="categoriesMargin">
-        <div class="breakline"></div>
+        <div class="breakline2"></div>
 
         <ul class="breadcrum">
           <li>
@@ -60,7 +74,7 @@
   </main>
 
   <footer>
-    <div class="navigationItemsFooter footerFlex">
+    <div class="hideWhenMobile navigationItemsFooter footerFlex">
       <a href="index.html#categories">Categories</a>
       <a href="category.html">Random Genre</a>
       <a href="">Bucket List</a>

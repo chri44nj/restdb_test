@@ -14,6 +14,7 @@ function showCategories(categories) {
   console.log(categories);
   document.querySelector(".genrebreadcrumb").textContent = movieGenre;
   document.querySelector(".categoriesHeading").textContent = movieGenre;
+  document.querySelector(".welcomeGenre").textContent = movieGenre + "?";
   categories.forEach(showCategory);
 }
 function showCategory(category) {
@@ -25,3 +26,12 @@ function showCategory(category) {
   copy.querySelector(".genreNameCategories").textContent = category.title;
   document.querySelector(".categoriesGrid").append(copy);
 }
+
+const gridMaster = document.querySelector(".gridMaster");
+gridMaster.style.height = `${window.innerHeight}px`;
+
+const heroImg = document.querySelector(".heroImg");
+heroImg.style.height = `${window.innerHeight}px`;
+
+const movieSuggestion = document.querySelector(".movieSuggestion");
+movieSuggestion.style.height = `${window.innerHeight}px`;

@@ -13,55 +13,49 @@
 </head>
 
 <body>
-  <header>
+  <div class="gridMaster">
+    <img class="heroImg" src="img/forside1_img.webp" alt="">
     <div class="headerGrid">
-      <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo" /></a>
-      <div class="navigationItems">
+      <div class="search">
+        <a class="headerLogo hideWhenMobile" href="index.html"><img src="img/logo.svg" alt="Logo" /></a>
+        <a class="headerLogo" href="index.html"><i class="fas fa-question questionMark hideWhenWeb"></i></a>
+
+      </div>
+      <div class="navigationItems hideWhenMobile">
         <a href="index.html#categories">Categories</a>
         <a href="category.html">Random Genre</a>
         <a href="">Bucket List</a>
         <a href="contact.html">Contact us</a>
       </div>
-      <i class="fas fa-search search"></i>
-    </div>
-  </header>
-
-  <main>
-    <section class="simpleGrid">
-      <img class="indexImage hideWhenMobile" src="img/forside1_img.webp" alt="">
-      <div class="simpleGrid_container">
-        <div>
-          <div class="heading_grid">
-            <h1 class="welcomeHeading">
-              Welcome to <br class="hideBR" />
-              Can't Decide
-            </h1>
-            <img class="logo1" src="img/logo1.svg" alt="questionmark" />
-          </div>
-
-          <div class="breakline"></div>
-          <p>
-            At our site, you no longer have to worry about finding the perfect
-            movie for your mood. Simply browse our categories, or take a look on our most
-            popular movies, add or see others bucket list, or just simply let us
-            pick the right one for you with random choice.
-          </p>
-        </div>
+      <div class="search">
+        <i class="fas fa-search hideWhenMobile"></i>
+        <i class="fa fa-bars burgerMenu hideWhenWeb"></i>
       </div>
-    </section>
+    </div>
+    <h1 class="indexWelcome">Welcome to <br class="hideWhenMobile"> Can't Decide</h1>
+    <img class="indexLogo hideWhenMobile" src="img/logo1.svg" alt="">
+    <div class="breakline"></div>
+    <p class="pitch">At our site, you no longer have to worry about finding the perfect
+      movie for your mood. Simply browse our categories, or take a look on our most
+      popular movies, add or see others bucket list, or just simply let us
+      pick the right one for you with random choice.</p>
+  </div>
 
-    <section class="movieSuggestion">
-      <img class="movieSuggestionPoster" src="" alt="" />
-      <div class="movieSuggestionGrid">
-        <p class="alignText movieSuggestionTitle"></p>
-        <div>
-          <h3 class="whatToWatchHeading alignText">What to watch tonight</h3>
-          <p class="whatToWatchText">
-            It's cold and dark outside and the perfect day for a movie that
-            will give you goosebumps, to last a lifetime. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas fuga labore molestias sunt esse natus dolorem numquam accusantium veniam ut
-            laborum illum architecto facere exercitationem ipsam, pariatur ex quo hic. <br />
-          </p>
-        </div>
+  <section class="movieSuggestion">
+    <img class="movieSuggestionPoster" src="" alt="" />
+    <div class="movieSuggestionFlex">
+
+      <h3 class="whatToWatchHeading">What to watch?</h3>
+      <div class="titleBox">
+        <p class="movieSuggestionTitle">This movie</p>
+        <p class="whatToWatchText">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nisi, maxime est nam quis explicabo reiciendis voluptatem quisquam placeat officia, deserunt quidem porro vero voluptate
+          incidunt, hic asperiores tempora quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea est praesentium soluta magnam autem vero, libero doloremque dolor, porro id tempore
+          nulla ipsum illo similique perferendis fuga nihil consectetur? <br />
+        </p>
+      </div>
+      <div class="streamingBox">
+        <p class="streamText">Streaming platforms</p>
         <div class="streamingButton">
           <a class="streaming" target="_blank" href="https://viaplay.dk/dk-da/"></a>
           <a class="streaming2" target="_blank" href="https://viaplay.dk/dk-da/"></a>
@@ -70,86 +64,87 @@
           <a class="streaming5" target="_blank" href="https://viaplay.dk/dk-da/"></a>
         </div>
       </div>
-    </section>
-
-    <section class="categories" id="categories">
-      <h4 class="categoriesHeading alignText">Categories</h4>
-      <div class="categoriesMargin">
-        <div class="breakline"></div>
-        <div class="categoriesGrid">
-          <a href="category.html?genre=Comedy">
-            <div class="categoryImg">
-              <img src="img/comedy_cat.webp" alt="comedy_img" />
-              <p class="genreName">Comedy</p>
-            </div>
-          </a>
-          <a href="category.html?genre=Crime">
-            <div class="categoryImg">
-              <img src="img/crime_cat.webp" alt="crime_img" />
-              <p class="genreName">Crime</p>
-            </div>
-          </a>
-          <a href="category.html">
-            <div class="categoryImg">
-              <img src="img/family_cat.webp" alt="family_cat" />
-              <p class="genreName">Family</p>
-            </div>
-          </a>
-          <a href="category.html?genre=Horror">
-            <div class="categoryImg">
-              <img src="img/horror_cat.webp" alt="Horror_img" />
-              <p class="genreName">Horror</p>
-            </div>
-          </a>
-          <a href="category.html?genre=Sci-Fi">
-            <div class="categoryImg">
-              <img src="img/sci-fi_cat.webp" alt="Sci-Fi_img" />
-              <p class="genreName">Sci-Fi</p>
-            </div>
-          </a>
-          <a href="category.html?genre=Action">
-            <div class="categoryImg">
-              <img src="img/action_cat.webp" alt="Action_img" />
-              <p class="genreName">Action</p>
-            </div>
-          </a>
-          <a href="category.html?genre=Drama">
-            <div class="categoryImg">
-              <img src="img/drama_cat.webp" alt="Drama_img" />
-              <p class="genreName">Drama</p>
-            </div>
-          </a>
-          <a href="category.html?genre=Romance">
-            <div class="categoryImg">
-              <img src="img/romance_cat.webp" alt="Romance_img" />
-              <p class="genreName">Romance</p>
-            </div>
-          </a>
-          <a href="category.html?genre=Documentary">
-            <div class="categoryImg">
-              <img src="img/docu_cat.webp" alt="Documentary_img" />
-              <p class="genreName">Documentary</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <div class="breakline3Background">
-      <div class="breakline3"></div>
     </div>
+  </section>
 
-    <section class="aboutUs">
-      <div class="aboutUS_gridPosition">
-        <h2 class="aboutUsHeading">Want to know more?</h2>
-
-        <div class="yesButtonFlex">
-          <a class="yesButton" href="">Yes I do!</a>
-        </div>
+  <section class="categories" id="categories">
+    <h4 class="categoriesHeading alignText">Categories</h4>
+    <div class="categoriesMargin">
+      <div class="breakline"></div>
+      <div class="categoriesGrid">
+        <a href="category.html?genre=Comedy">
+          <div class="categoryImg">
+            <img src="img/comedy_cat.webp" alt="comedy_img" />
+            <p class="genreName">Comedy</p>
+          </div>
+        </a>
+        <a href="category.html?genre=Crime">
+          <div class="categoryImg">
+            <img src="img/crime_cat.webp" alt="crime_img" />
+            <p class="genreName">Crime</p>
+          </div>
+        </a>
+        <a href="category.html">
+          <div class="categoryImg">
+            <img src="img/family_cat.webp" alt="family_cat" />
+            <p class="genreName">Family</p>
+          </div>
+        </a>
+        <a href="category.html?genre=Horror">
+          <div class="categoryImg">
+            <img src="img/horror_cat.webp" alt="Horror_img" />
+            <p class="genreName">Horror</p>
+          </div>
+        </a>
+        <a href="category.html?genre=Sci-Fi">
+          <div class="categoryImg">
+            <img src="img/sci-fi_cat.webp" alt="Sci-Fi_img" />
+            <p class="genreName">Sci-Fi</p>
+          </div>
+        </a>
+        <a href="category.html?genre=Action">
+          <div class="categoryImg">
+            <img src="img/action_cat.webp" alt="Action_img" />
+            <p class="genreName">Action</p>
+          </div>
+        </a>
+        <a href="category.html?genre=Drama">
+          <div class="categoryImg">
+            <img src="img/drama_cat.webp" alt="Drama_img" />
+            <p class="genreName">Drama</p>
+          </div>
+        </a>
+        <a href="category.html?genre=Romance">
+          <div class="categoryImg">
+            <img src="img/romance_cat.webp" alt="Romance_img" />
+            <p class="genreName">Romance</p>
+          </div>
+        </a>
+        <a href="category.html?genre=Documentary">
+          <div class="categoryImg">
+            <img src="img/docu_cat.webp" alt="Documentary_img" />
+            <p class="genreName">Documentary</p>
+          </div>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <div class="breakline2"></div>
+  <div class="breakline3Background">
+    <div class="breakline3"></div>
+  </div>
+
+  <section class="aboutUs">
+    <div class="aboutUS_gridPosition">
+      <h2 class="aboutUsHeading">Want to know more?</h2>
+
+      <div class="yesButtonFlex">
+        <a class="yesButton" href="">Yes I do!</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="breakline2"></div>
   </main>
 
   <footer>

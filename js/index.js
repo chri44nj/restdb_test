@@ -7,6 +7,15 @@ fetch("https://web2film-9d1b.restdb.io/rest/movies", {
   .then((e) => e.json())
   .then(showMovies);
 
+const gridMaster = document.querySelector(".gridMaster");
+gridMaster.style.height = `${window.innerHeight}px`;
+
+const heroImg = document.querySelector(".heroImg");
+heroImg.style.height = `${window.innerHeight}px`;
+
+const movieSuggestion = document.querySelector(".movieSuggestion");
+movieSuggestion.style.height = `${window.innerHeight}px`;
+
 function generateRandomNumber() {
   return Math.floor(Math.random() * 80);
 }
