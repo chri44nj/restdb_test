@@ -79,7 +79,7 @@ p {
 }
 
 .logo1 {
-  width: 20%;
+  width: clamp(2rem, 10vw, 6rem);
   align-items: center;
 }
 
@@ -136,9 +136,10 @@ p {
 }
 
 .welcomeHeading {
-  font-size: 6rem;
+  font-size: clamp(2rem, 5vw, 6rem);
   font-family: "Lato", sans-serif;
   display: flex;
+  white-space: nowrap;
 }
 
 /** Section: About Us **/
