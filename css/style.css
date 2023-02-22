@@ -64,7 +64,7 @@ p {
   font-family: "Lato";
 }
 
-.headerGrid div {
+.headerGrid > * {
   display: flex;
 }
 
