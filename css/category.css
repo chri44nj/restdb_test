@@ -69,13 +69,6 @@ ul.breadcrum li a:hover {
     font-size: 2rem;
   }
 
-  .headerGrid {
-    display: flex;
-    justify-content: space-between;
-    grid-column: 1 / 11;
-    grid-row: 2 / 4;
-  }
-
   .simpleGrid {
     display: grid;
     align-items: center;
