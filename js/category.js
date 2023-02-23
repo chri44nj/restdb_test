@@ -12,9 +12,9 @@ fetch(`https://web2film-9d1b.restdb.io/rest/movies?q={"genre": "${movieGenre}"}`
 
 function showCategories(categories) {
   console.log(categories);
+  document.querySelector(".welcomeGenre").textContent = movieGenre + "?";
   document.querySelector(".genrebreadcrumb").textContent = movieGenre;
   document.querySelector(".categoriesHeading").textContent = movieGenre;
-  document.querySelector(".welcomeGenre").textContent = movieGenre + "?";
   categories.forEach(showCategory);
 }
 function showCategory(category) {

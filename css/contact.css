@@ -223,6 +223,10 @@ footer {
   display: none;
 }
 
+.fa-search {
+  padding-right: 25%;
+}
+
 @media (max-width: 800px) {
   .questionMark {
     display: flex;

@@ -13,8 +13,10 @@ gridMaster.style.height = `${window.innerHeight}px`;
 const heroImg = document.querySelector(".heroImg");
 heroImg.style.height = `${window.innerHeight}px`;
 
-const movieSuggestion = document.querySelector(".movieSuggestion");
-movieSuggestion.style.height = `${window.innerHeight}px`;
+if (window.innerWidth > 800) {
+  const movieSuggestion = document.querySelector(".movieSuggestion");
+  movieSuggestion.style.height = `${window.innerHeight}px`;
+}
 
 function generateRandomNumber() {
   return Math.floor(Math.random() * 80);

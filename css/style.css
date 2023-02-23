@@ -96,7 +96,13 @@ p {
 }
 
 .fa-search {
-  padding-right: 5.5%;
+  padding-right: 25%;
+  color: #3dd67c;
+}
+
+.fa-bars,
+.fa-question {
+  color: #3dd67c;
 }
 
 /****** MAIN ******/
@@ -194,6 +200,7 @@ p {
   font-family: "Lato";
   padding-bottom: 3rem;
   word-wrap: break-word;
+  text-align: center;
 }
 
 .whatToWatchHeading {
@@ -272,7 +279,9 @@ p {
   justify-content: center;
 }
 
-.categoryImg:hover img {
+.categoryImg:hover img,
+.categoriesImg a img:hover,
+.suggestionsGrid a div img:hover {
   opacity: 50%;
   -webkit-filter: grayscale(100%) sepia(100%) hue-rotate(45deg);
   filter: grayscale(100%) sepia(100%) hue-rotate(45deg);
@@ -472,7 +481,7 @@ hr {
   text-decoration: none;
   font-weight: bold;
   height: 3rem;
-  line-height: 3rem;
+  line-height: 2.6rem;
   max-width: 10rem;
   border-radius: 30px;
   text-align: center;
@@ -575,12 +584,20 @@ hr {
   display: none;
 }
 
+.movieTitle,
+.welcomeGenre {
+  color: #3dd67c;
+}
+
+.oscarNominated,
+.oscarWinner {
+  color: #3dd67c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 /**************** MOBIL ****************/
 @media (max-width: 800px) {
-  .indexWelcome {
-    font-size: 2rem;
-  }
-
   .headerGrid {
     display: none;
   }
@@ -601,7 +618,7 @@ hr {
   .indexWelcome {
     font-size: 2rem;
     font-family: "Lato", sans-serif;
-    display: flex;
+    display: block;
   }
 
   .categoriesMargin {
@@ -636,7 +653,7 @@ hr {
   .indexWelcome {
     color: white;
     font-size: 3rem;
-    grid-row: 15;
+    grid-row: 10;
     grid-column: 2 / 10;
     white-space: pre-wrap;
     text-align: center;
@@ -645,7 +662,7 @@ hr {
   .breakline {
     border-bottom: 3px solid #3dd67c;
     margin-bottom: 1.5rem;
-    grid-row: 16;
+    grid-row: 11;
     grid-column: 2 / 10;
   }
 
@@ -654,7 +671,7 @@ hr {
     color: white;
     line-height: 1.8;
     font-family: "Montserrat", sans-serif;
-    grid-row: 17;
+    grid-row: 12;
     grid-column: 2 / 10;
   }
 
@@ -768,13 +785,11 @@ hr {
   .questionMark {
     display: flex;
     padding-left: 25%;
-    color: black;
   }
 
   .burgerMenu {
     padding-right: 25%;
     display: flex;
-    color: black;
   }
 
   .headerGrid * {

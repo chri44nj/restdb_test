@@ -31,6 +31,10 @@ ul.breadcrum li a:hover {
   justify-content: center;
 }
 
+.categoriesImg img {
+  padding-bottom: 1rem;
+}
+
 .genreNameCategories {
   font-size: 2rem;
   font-weight: bold;

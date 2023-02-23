@@ -25,13 +25,13 @@ function showMovie(movie) {
   document.querySelector(".director").textContent = `${movie.director}`;
   document.querySelector(".budget").textContent = `$${movie.budget}`;
   if (movie.oscarNominated) {
-    document.querySelector(".oscarNominated").textContent = `Oscar nominated`;
+    document.querySelector(".oscarNominated").textContent = `Oscar Nominee`;
   } else {
     document.querySelector(".oscarNominated").classList.add("hide");
   }
 
   if (movie.oscarWinner) {
-    document.querySelector(".oscarWinner").textContent = `Oscar winner`;
+    document.querySelector(".oscarWinner").textContent = `Oscar Winner`;
   } else {
     document.querySelector(".oscarWinner").classList.add("hide");
   }
