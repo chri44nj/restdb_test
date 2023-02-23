@@ -43,7 +43,7 @@ p {
 
 .headerGrid {
   position: absolute;
-  top: 1%;
+  top: 2%;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -225,6 +225,11 @@ footer {
 
 .fa-search {
   padding-right: 25%;
+  color: #3dd67c;
+}
+
+.headerLogo {
+  width: 60px;
 }
 
 @media (max-width: 800px) {
