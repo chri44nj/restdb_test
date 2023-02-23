@@ -26,6 +26,7 @@ function showMovies(movies) {
   console.log(movies);
   let rndNum = generateRandomNumber();
   document.querySelector(".movieSuggestionTitle").textContent = movies[rndNum].title;
+  document.querySelector(".whatToWatchText").textContent = movies[rndNum].description;
   document.querySelector(".movieSuggestionPoster").src = `img/${movies[rndNum].poster}`;
   if (movies[rndNum].streaming.includes("Netflix")) {
     document.querySelector(".streaming").href = `https://www.netflix.com/dk/`;
