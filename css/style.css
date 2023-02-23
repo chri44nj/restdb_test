@@ -90,10 +90,13 @@ p {
 
 .search {
   justify-content: flex-end;
-  padding-right: 5.5rem;
   align-items: center;
   font-size: 2rem;
   cursor: pointer;
+}
+
+.fa-search {
+  padding-right: 5.5%;
 }
 
 /****** MAIN ******/
@@ -117,25 +120,25 @@ p {
   font-size: 6rem;
   white-space: nowrap;
   grid-column: 6;
-  grid-row: 16;
+  grid-row: 30;
 }
 
 .indexLogo {
   width: 150px;
   grid-column: 7 / 15;
-  grid-row: 16 / 17;
+  grid-row: 30 / 31;
 }
 
 .breakline {
   border-bottom: 3px solid #3dd67c;
   margin-bottom: 1.5rem;
   grid-column: 6 / 16;
-  grid-row: 18;
+  grid-row: 32;
 }
 
 .pitch {
   grid-column: 6 / 16;
-  grid-row: 19;
+  grid-row: 33;
   color: white;
   line-height: 1.8;
   font-family: "Montserrat", sans-serif;
@@ -633,7 +636,7 @@ hr {
   .indexWelcome {
     color: white;
     font-size: 3rem;
-    grid-row: 6;
+    grid-row: 15;
     grid-column: 2 / 10;
     white-space: pre-wrap;
     text-align: center;
@@ -642,7 +645,7 @@ hr {
   .breakline {
     border-bottom: 3px solid #3dd67c;
     margin-bottom: 1.5rem;
-    grid-row: 7;
+    grid-row: 16;
     grid-column: 2 / 10;
   }
 
@@ -651,7 +654,7 @@ hr {
     color: white;
     line-height: 1.8;
     font-family: "Montserrat", sans-serif;
-    grid-row: 8;
+    grid-row: 17;
     grid-column: 2 / 10;
   }
 
@@ -676,7 +679,7 @@ hr {
     font-family: "Lato", sans-serif;
     border-top: 10px solid #3dd67c;
     border-bottom: 10px solid #3dd67c;
-    height: auto;
+    height: fit-content;
     padding-bottom: 2rem;
   }
 

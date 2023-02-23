@@ -75,8 +75,8 @@ gridMaster.style.height = `${window.innerHeight}px`;
 const heroImg = document.querySelector(".heroImg");
 heroImg.style.height = `${window.innerHeight}px`;
 
-const movieSuggestion = document.querySelector(".movieSuggestion");
-movieSuggestion.style.height = `${window.innerHeight}px`;
+/* const movieSuggestion = document.querySelector(".movieSuggestion");
+movieSuggestion.style.height = `${window.innerHeight}px`; */
 
 const movieInfo = document.querySelector(".movieInfo");
 movieInfo.style.height = `${window.innerHeight}px`;
